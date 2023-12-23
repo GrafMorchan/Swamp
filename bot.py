@@ -19,7 +19,7 @@ async def reply(message: types.Message):
     markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
     markup.add(types.InlineKeyboardButton('Perm'))
     markup.add(types.InlineKeyboardButton('Omsk'))
-    markup.add(types.InlineKeyboardButton('Moskow'))
+    markup.add(types.InlineKeyboardButton('Moscow'))
     await message.reply('Выводим данные! ', reply_markup=markup)
 
 @dp.callback_query_handler()
